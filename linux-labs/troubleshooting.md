@@ -41,7 +41,9 @@ Test TCP connectivity and HTTPS responses from a Windows client.
 - HTTPS response: HTTP 301 Moved Permanently
 
 ### Analysis
-Compare DNS resolution, TCP connectivity, and HTTP response results to narrow down possible connectivity issues.
+The TCP connection to port 443 succeeded.
+The server returned an HTTP redirect, indicating
+that it responded to the HTTPS request.
 
 ### Environment
 Windows 11 local networking lab. No AWS resources were created.
@@ -56,12 +58,13 @@ Investigate DNS records using Windows command-line tools.
 - `ipconfig /all`
 
 ### Results
-- A record query: [Record actual result]
-- MX record query: [Record actual result]
-- Configured Wi-Fi DNS server: [Record privately; do not publish sensitive network details]
+- A record query: Successful
+- MX record query: Successful
+- Configured Wi-Fi DNS server: DNS servers configured on the Wi-Fi adapter
 
 ### Analysis
-Explain whether DNS queries succeeded and what the returned record types represent.
+DNS queries returned records successfully, confirming
+that hostname resolution worked during testing.
 
 ### Environment
 Windows 11 local networking lab. No AWS resources were created.
