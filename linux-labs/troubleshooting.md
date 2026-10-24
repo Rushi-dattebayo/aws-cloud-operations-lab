@@ -45,3 +45,23 @@ Compare DNS resolution, TCP connectivity, and HTTP response results to narrow do
 
 ### Environment
 Windows 11 local networking lab. No AWS resources were created.
+## Lab 03: DNS Record Investigation
+
+### Objective
+Investigate DNS records using Windows command-line tools.
+
+### Commands
+- `nslookup -type=A amazon.com`
+- `nslookup -type=MX gmail.com`
+- `ipconfig /all`
+
+### Results
+- A record query: [Record actual result]
+- MX record query: [Record actual result]
+- Configured Wi-Fi DNS server: [Record privately; do not publish sensitive network details]
+
+### Analysis
+Explain whether DNS queries succeeded and what the returned record types represent.
+
+### Environment
+Windows 11 local networking lab. No AWS resources were created.
